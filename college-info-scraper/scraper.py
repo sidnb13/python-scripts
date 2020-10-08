@@ -22,7 +22,6 @@ def scrape(url):
     userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0)\
      AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36'
     chrome_options.add_argument('user-agent={userAgent}')
-    
     # Pass the url to the driver
     driver = webdriver.Chrome(options=chrome_options)
     driver.get(url)
